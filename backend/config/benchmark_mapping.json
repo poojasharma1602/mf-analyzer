@@ -1,0 +1,80 @@
+{
+  "note": "Default benchmark suggestions by SEBI category / scheme name. These are generic category-level defaults, NOT each scheme's official benchmark. A scheme's actual benchmark is stated in its SID / factsheet - verify it and use the per-scheme override in the Benchmarks tab where it differs. Rules are evaluated top to bottom; the first match wins. Edit this file (restart not required) to add your own rules.",
+  "rules": [
+    {
+      "field": "name",
+      "pattern": "nifty\\s*next\\s*50",
+      "benchmark": "NIFTY NEXT 50 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*midcap\\s*150",
+      "benchmark": "NIFTY MIDCAP 150 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*smallcap\\s*250",
+      "benchmark": "NIFTY SMALLCAP 250 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*largemidcap\\s*250",
+      "benchmark": "NIFTY LARGEMIDCAP 250 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*100\\b",
+      "benchmark": "NIFTY 100 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*500\\b",
+      "benchmark": "NIFTY 500 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*bank",
+      "benchmark": "NIFTY BANK TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*it\\b",
+      "benchmark": "NIFTY IT TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "nifty\\s*50\\b",
+      "benchmark": "NIFTY 50 TRI"
+    },
+    {
+      "field": "name",
+      "pattern": "\\bsensex\\b",
+      "benchmark": "BSE SENSEX TRI"
+    },
+    {
+      "field": "category",
+      "pattern": "large\\s*(&|and)\\s*mid",
+      "benchmark": "NIFTY LARGEMIDCAP 250 TRI"
+    },
+    {
+      "field": "category",
+      "pattern": "large\\s*cap",
+      "benchmark": "NIFTY 100 TRI"
+    },
+    {
+      "field": "category",
+      "pattern": "mid\\s*cap",
+      "benchmark": "NIFTY MIDCAP 150 TRI"
+    },
+    {
+      "field": "category",
+      "pattern": "small\\s*cap",
+      "benchmark": "NIFTY SMALLCAP 250 TRI"
+    },
+    {
+      "field": "category",
+      "pattern": "flexi\\s*cap|multi\\s*cap|focused|contra|value|dividend\\s*yield|elss|tax",
+      "benchmark": "NIFTY 500 TRI"
+    }
+  ]
+}
