@@ -1,5 +1,5 @@
 // All requests go to the local FastAPI backend only (never to mfapi.in directly).
-const BASE = (import.meta.env.VITE_API_BASE || '') + '/api'
+const BASE = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '') + '/api'
 
 export class ApiError extends Error {
   constructor(message, code, status) {
